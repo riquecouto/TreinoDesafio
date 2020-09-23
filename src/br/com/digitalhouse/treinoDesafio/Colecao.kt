@@ -1,4 +1,4 @@
 package br.com.digitalhouse.treinoDesafio
 
-class Colecao {
+class Colecao (val colecao: MutableList<Livro>) {
 }
