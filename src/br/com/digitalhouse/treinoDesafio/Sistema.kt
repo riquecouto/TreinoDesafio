@@ -1,11 +1,11 @@
 package br.com.digitalhouse.treinoDesafio
 
-class Sistema(var livros: ArrayList<Livro>, var colecoes: ArrayList<Colecao>) {
+class Sistema(var livros: MutableList<Livro>, var colecoes: MutableList<Colecao>) {
 
     fun cadastrarLivro(livro: Livro): Int {
         livros.add(livro)
         println("O livro foi adicionado na lista")
-        println(livros)
+        println(livros.toString())
         return 0
     }
 
@@ -28,5 +28,9 @@ class Sistema(var livros: ArrayList<Livro>, var colecoes: ArrayList<Colecao>) {
 
     fun efetuarVenda(codigo: Int): Int {
         return 0
+    }
+
+    override fun toString(): String {
+        return super.toString()
     }
 }
